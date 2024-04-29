@@ -80,6 +80,16 @@
 
 /** about info **/
 
+.student-about-title-container {
+  position: relative;
+}
+
+.student-about-building-img {
+  position: absolute;
+  left: 340px;
+  top: -60px;
+}
+
 .student-about-info-container {
   display: flex;
   gap: 24px;

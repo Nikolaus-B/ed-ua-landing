@@ -37,6 +37,8 @@
 }
 
 .nav-link {
+  position: relative;
+
   font-family: Roboto;
   font-size: 16px;
   font-style: normal;
@@ -44,6 +46,36 @@
   line-height: 24px;
 
   color: var(--green-color-300);
+
+  overflow: hidden;
+}
+
+@keyframes expandAnimation {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  display: block;
+  bottom: -3px;
+  width: 0px;
+
+  height: 1px;
+  background-color: var(--green-color-300);
+
+  transition: width 0.3s ease-out;
+  transform: translateX(-50%);
+}
+
+.nav-link:hover::after {
+  width: 100%;
 }
 
 .footer-container {
@@ -92,4 +124,25 @@
 .footer-contacts-item {
   display: flex;
   justify-content: space-between;
+}
+
+.scroll-to-top-btn {
+  position: fixed;
+
+  right: 6px;
+  bottom: 30%;
+
+  width: 46px;
+  height: 46px;
+  padding: 10px 11px;
+
+  z-index: 10;
+  cursor: pointer;
+
+  backdrop-filter: blur(6px);
+  border: 1px solid var(--green-color-300);
+  background-color: transparent;
+  border-radius: 50px;
+
+  transition: opacity var(--transition-dur-and-func);
 }

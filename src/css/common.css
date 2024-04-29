@@ -22,7 +22,7 @@
   --additional-green-200: #24a750;
 
   /* animation */
-  --transition-dur-and-func: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-dur-and-func: 350ms cubic-bezier(0.4, 0, 0.2, 1);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -58,7 +58,13 @@ div {
 
   border-radius: 8px;
   border: 1px solid var(--green-color-300);
-  background: var(--yellow-color-300);
+  background-color: var(--yellow-color-300);
+
+  transition: background-color var(--transition-dur-and-func);
+}
+
+.btn:hover {
+  background-color: var(--yellow-color);
 }
 
 .container {
@@ -67,7 +73,7 @@ div {
   margin: 0 auto;
 }
 
-.container-no-paggings {
+.container-no-paddings {
   max-width: 1440px;
   padding-bottom: 120px;
   margin: 0 auto;
