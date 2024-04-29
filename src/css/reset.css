@@ -35,11 +35,11 @@ img {
   max-width: 100%;
 }
 
-.link {
+a {
   text-decoration: none;
 }
 
-.list {
+ul {
   list-style-type: none;
 }
 
