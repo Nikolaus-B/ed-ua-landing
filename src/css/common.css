@@ -1,0 +1,90 @@
+:root {
+  /* Main */
+  --white-color: #fcfbfb;
+  --gray-color: #606161;
+  --black-color: #111010;
+
+  /* Accent */
+  --wight-color: #fefefe;
+  --yellow-color: #fffaeb;
+  --yellow-color-200: #fff1c6;
+  --yellow-color-300: #ffe288;
+  --green-color-300: #00544d;
+
+  /* Additional */
+  --additional-gray-color: #8c9098;
+  --yellow-color-400: #f3c80b;
+  --yellow-color-500: #e9a116;
+  --additional-yellow-color-500: #c2a009;
+  --additional-blue-color: #27a6eb;
+  --additional-red-color: #f20a0a;
+  --additional-green-100: #b0c0be;
+  --additional-green-200: #24a750;
+
+  /* animation */
+  --transition-dur-and-func: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: Roboto;
+  letter-spacing: -0.98px;
+  margin: 0;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+.title {
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+
+  margin-bottom: 80px;
+
+  color: var(--green-color-300);
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 8px;
+  border: 1px solid var(--green-color-300);
+  background: var(--yellow-color-300);
+}
+
+.container {
+  max-width: 1440px;
+  padding: 0 84px 120px 84px;
+  margin: 0 auto;
+}
+
+.container-no-paggings {
+  max-width: 1440px;
+  padding-bottom: 120px;
+  margin: 0 auto;
+}
+
+/* @media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+} */
