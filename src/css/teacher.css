@@ -115,8 +115,14 @@
   line-height: 150%;
 }
 
+.teacher-join-list {
+  list-style: disc;
+  margin-left: 40px;
+}
+
 .teacher-oportunities-container {
   display: flex;
+
   padding: 24px 0;
 
   border-top: 1px solid var(--green-color-300);
@@ -126,14 +132,13 @@
 .teacher-oportunities-element {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  flex-wrap: nowrap;
   align-items: center;
 
   gap: 24px;
 
   width: 300px;
   height: 180px;
-  padding: 24px;
 }
 
 .teacher-oportunities-text {
@@ -193,7 +198,7 @@
   font-weight: 400;
   line-height: 150%;
 
-  color: var(--green-color-300);
+  /* color: var(--green-color-300); */
 }
 
 .teacher-will-recive-img {

@@ -86,13 +86,13 @@
 
 .student-about-building-img {
   position: absolute;
-  left: 340px;
+  right: 0;
   top: -60px;
 }
 
 .student-about-info-container {
   display: flex;
-  gap: 24px;
+  gap: 57px;
   justify-content: center;
   align-items: center;
 }
@@ -251,7 +251,7 @@
 
   text-align: center;
 
-  color: var(--green-color-300);
+  /* color: var(--green-color-300); */
 }
 
 /** join us */
