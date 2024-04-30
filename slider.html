@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Коментарі до продукту</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <style>
+      .swiper-container {
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+        position: relative;
+        height: 200px;
+      }
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+      }
+      .controls {
+        margin-top: 10px;
+        text-align: center;
+      }
+      .swiper-button-prev,
+      .swiper-button-next {
+        color: #000;
+        font-size: 18px;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 10;
+      }
+      .swiper-button-prev {
+        left: 10px;
+      }
+      .swiper-button-next {
+        right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">Коментар 1</div>
+        <div class="swiper-slide">Коментар 2</div>
+        <div class="swiper-slide">Коментар 3</div>
+        <div class="swiper-slide">Коментар 4</div>
+        <div class="swiper-slide">Коментар 5</div>
+        <div class="swiper-slide">Коментар 6</div>
+        <div class="swiper-slide">Коментар 7</div>
+        <div class="swiper-slide">Коментар 8</div>
+        <div class="swiper-slide">Коментар 9</div>
+      </div>
+
+      <div class="controls">
+        <button class="swiper-button-prev"></button>
+        <button class="swiper-button-next"></button>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 3,
+        spaceBetween: 10,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        loop: true,
+      });
+    </script>
+  </body>
+</html>
